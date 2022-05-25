@@ -1,0 +1,116 @@
+import React from 'react';
+import Image from 'next/image';
+import styles from '../../styles/Order.module.css';
+
+const Order = () => {
+  const status = 0;
+
+  const statusClass = (index) => {
+    if (index - status < 1) return styles.done;
+    if (index - status === 1) return styles.inProgress;
+    if (index - status > 1) return styles.undone;
+  };
+  return (
+    <div className={styles.container}>
+      <div className={styles.left}>
+        <div className={styles.row}>
+          <table className={styles.table}>
+            <tr className={styles.tr}>
+              <th>Order IDs</th>
+              <th>Customer</th>
+              <th>Address</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>
+                <span className={styles.id}>12345678</span>
+              </td>
+              <td>
+                <span className={styles.name}>logpom bassong</span>
+              </td>
+              <td>
+                <span className={styles.address}>2</span>
+              </td>
+              <td>
+                <span className={styles.total}>XAF 8000</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div className={styles.row}>
+          <div className={statusClass(0)}>
+            <Image
+              className={styles.checkedIcon}
+              src="/img/paid.png"
+              width={30}
+              height={30}
+              alt=""
+            />
+            <span>Payment</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+          <div className={statusClass(1)}>
+            <Image
+              className={styles.checkedIcon}
+              src="/img/packaging.png"
+              width={30}
+              height={30}
+              alt=""
+            />
+            <span>Packaging</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+          <div className={statusClass(2)}>
+            <Image
+              className={styles.checkedIcon}
+              src="/img/bike.png"
+              width={30}
+              height={30}
+              alt=""
+            />
+            <span>On the way</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+          <div className={statusClass(3)}>
+            <Image
+              className={styles.checkedIcon}
+              src="/img/delivered.png"
+              width={30}
+              height={30}
+              alt=""
+            />
+            <span>Payment</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.right}>
+        <div className={styles.wrapper}>
+          <h2 className={styles.title}> CART TOTAL</h2>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Subtotal:</b>XAF10000
+          </div>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Discount:</b>XAF 0
+          </div>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Total:</b>XAF10000
+          </div>
+          <button disabled className={styles.button}>
+            PAID
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Order;
