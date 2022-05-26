@@ -7,8 +7,6 @@
     justify-content: center;
     padding: 20px 40px;
     cursor: pointer;
-
-
 }
 .title{
     font-size: 18px;
@@ -24,4 +22,15 @@
 .desc{
     text-align: center;
     color: #777;
+}
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .price, .desc{
+        font-size: 24px;
+    }
 }
