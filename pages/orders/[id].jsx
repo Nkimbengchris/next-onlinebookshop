@@ -85,7 +85,7 @@ const Order = () => {
               height={30}
               alt=""
             />
-            <span>Payment</span>
+            <span>Delivered</span>
             <div className={styles.checkedIcon}>
               <Image src="/img/checked.png" width={20} height={20} alt="" />
             </div>

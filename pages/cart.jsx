@@ -21,7 +21,7 @@ const Cart = () => {
                   src="/img/pizza.png"
                   layout="fill"
                   alt=""
-                  objectFit="cover"
+                  objectfit="cover"
                 />
               </div>
             </td>
@@ -45,7 +45,7 @@ const Cart = () => {
                   src="/img/pizza.png"
                   layout="fill"
                   alt=""
-                  objectFit="cover"
+                  objectfit="cover"
                 />
               </div>
             </td>

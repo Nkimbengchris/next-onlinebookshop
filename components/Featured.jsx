@@ -28,7 +28,7 @@ function Featured() {
         style={{ left: 0 }}
         onClick={() => handleArrow('l')}
       >
-        <Image src="/img/arrowl.png" alt="" layout="fill" objectFit="contain" />
+        <Image src="/img/arrowl.png" alt="" layout="fill" objectfit="contain" />
       </div>
       <div
         className={styles.wrapper}
@@ -40,7 +40,7 @@ function Featured() {
               src="img/featured.png"
               alt=""
               layout="fill"
-              objectFit="contain"
+              objectfit="contain"
             />
           </div>
         ))}
