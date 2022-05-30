@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/Booklist.module.css';
 import Bookcard from './Bookcard';
 
-const Booklist = () => {
+const Booklist = ({ booklist }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>THE BEST ONLINE BOOKSHOP IN DOUALA</h1>
@@ -13,14 +13,9 @@ const Booklist = () => {
         porro odit veritatis.
       </p>
       <div className={styles.wrapper}>
-        <Bookcard />
-        <Bookcard />
-        <Bookcard />
-        <Bookcard />
-        <Bookcard />
-        <Bookcard />
-        <Bookcard />
-        <Bookcard />
+        {booklist.map((book) => (
+          <Bookcard key={book._id} book={book} />
+        ))}
       </div>
     </div>
   );
