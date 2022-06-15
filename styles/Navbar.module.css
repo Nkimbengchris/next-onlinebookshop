@@ -1,13 +1,15 @@
 .container{
     height: 100px;
     padding: 0px 50px;
-    background-color: #d1411e;
+    background-color: #5651e5;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top:0;
     z-index: 999;
+    border-radius: 10px;
+
 }
 
 .item{
@@ -29,8 +31,11 @@
     height: 50px;
 }
 .texts{
-    margin-left: 20px;
+    margin-left: 4px;
     color: white;
+    font-size: 16px;
+    font-weight: 900;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .text:first-child{
     font-size: 12px;
@@ -57,17 +62,17 @@
 }
 .counter{
     position: absolute;
-    top: -10px;
-    right: -10px;
-    height: 20px;
-    border-radius: 50%;
+    top: -9px;
+    right: -11px;
+    height: 17px;
+    border-radius: 100%;
     background-color: white;
     padding: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #d1411e;
+    color: #5651e5;
 }
 @media screen and (max-width:480px) {
     .item:nth-child(2){

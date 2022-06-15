@@ -33,7 +33,7 @@ const Order = ({ order }) => {
                 <span className={styles.address}>{order.address}</span>
               </td>
               <td>
-                <span className={styles.total}>${order.total}</span>
+                <span className={styles.total}>XAF{order.total}</span>
               </td>
             </tr>
           </table>

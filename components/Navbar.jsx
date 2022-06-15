@@ -13,8 +13,8 @@ const Navbar = () => {
           <Image src="/img/phone-call.png" alt="" width="32" height="32" />
         </div>
         <div className={styles.texts}>
-          <div className={styles.texts}>BUY NOW!</div>
-          <div className={styles.texts}>237 659 32 38 999</div>
+          <div className={styles.texts}>CONTACT</div>
+          <div className={styles.texts}>+237-659-32-38-91</div>
         </div>
       </div>
       <div className={styles.item}>
@@ -24,7 +24,7 @@ const Navbar = () => {
           </Link>
           <li className={styles.listItem}>Products</li>
           <li className={styles.listItem}>Menu</li>
-          {/*<Image src="/img/logo.png" alt="" width="160px" height="69px" /> */}
+          <Image src="/img/booko1.png" alt="" width="400px" height="190px" />
           <li className={styles.listItem}>Events</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Contact</li>

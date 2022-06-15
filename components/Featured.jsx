@@ -3,13 +3,9 @@ import styles from '../styles/Featured.module.css';
 import Image from 'next/image';
 import { useState } from 'react';
 
-function Featured() {
+const Featured = () => {
   const [index, setIndex] = useState(0);
-  const images = [
-    '/img/featured.jpg',
-    '/img/featured2.jpg',
-    '/img/featured3.jpg',
-  ];
+  const images = ['/img/citship.png', '/img/french2.png', '/img/meschem.png'];
 
   const handleArrow = (direction) => {
     if (direction === 'l') {
@@ -18,9 +14,8 @@ function Featured() {
     if (direction === 'r') {
       setIndex(index !== 2 ? index + 1 : 0);
     }
-
-    console.log(index);
   };
+
   return (
     <div className={styles.container}>
       <div
@@ -34,14 +29,9 @@ function Featured() {
         className={styles.wrapper}
         style={{ transform: `translateX(${-100 * index}vw)` }}
       >
-        {images.map((_img, i) => (
+        {images.map((img, i) => (
           <div className={styles.imgContainer} key={i}>
-            <images
-              src="img/featured.png"
-              alt=""
-              layout="fill"
-              objectfit="contain"
-            />
+            <images src={img} alt="" layout="fill" objectfit="contain" />
           </div>
         ))}
       </div>
@@ -54,6 +44,6 @@ function Featured() {
       </div>
     </div>
   );
-}
+};
 
 export default Featured;
