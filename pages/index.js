@@ -19,6 +19,7 @@ export default function Home({ booklist, admin }) {
       </Head>
       <Featured />
       {admin && <AddButton setClose={setClose} />}
+      <admin />
       <Booklist booklist={booklist} />
       {!close && <Add setClose={setClose} />}
     </div>

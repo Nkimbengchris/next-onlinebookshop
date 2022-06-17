@@ -1,6 +1,7 @@
 .container {
-    height: calc(100vh - 100px);
-    background-color: #5651e5;
+    height: calc(60vh - 50px);
+    background:url(/img/unsplash1.jpg) no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     position: relative;
 }
