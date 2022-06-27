@@ -7,10 +7,9 @@ const Booklist = ({ booklist }) => {
     <div className={styles.container}>
       <h1 className={styles.title}>THE BEST ONLINE BOOKSHOP IN DOUALA</h1>
       <p className={styles.desc}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ad
-        quis? Dolorem hic quam excepturi nemo quia voluptate adipisci
-        perspiciatis facere. Excepturi eveniet voluptates omnis obcaecati labore
-        porro odit veritatis.
+        You have to stay in school. You have to. You have to go to college. You
+        have to get your degree. Because that is the one thing people can not
+        take away from you is your education. And it is worth the investment.
       </p>
       <div className={styles.wrapper}>
         {booklist.map((book) => (
