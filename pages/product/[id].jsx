@@ -34,7 +34,7 @@ const Product = ({ book }) => {
       </div>
       <div className={styles.right}>
         <h1 className={styles.title}>{book.title}</h1>
-        <span className={styles.price}>XAF{book.prices[size]}</span>
+        <span className={styles.price}> XAF{book.prices[size]}</span>
         <p className={styles.desc}>{book.desc}</p>
         <h3 className={styles.choose}> choose size</h3>
         <div className={styles.sizes}>
@@ -61,6 +61,7 @@ const Product = ({ book }) => {
           </button>
         </div>
       </div>
+      <div className={styles.recomm}></div>
     </div>
   );
 };
