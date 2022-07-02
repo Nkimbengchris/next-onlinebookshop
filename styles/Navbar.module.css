@@ -1,7 +1,7 @@
 .container{
     height: 100px;
     padding: 0px 50px;
-    background-color: #5651e5;
+    background-color: #fdfeff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@
 }
 .texts{
     margin-left: 4px;
-    color: white;
+    color: rgb(3, 3, 3);
     font-size: 16px;
     font-weight: 900;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -50,7 +50,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     align-items: center;
     list-style: none;
-    color: white;
+    color: rgb(7, 7, 7);
 }
 .listItem{
     margin: 20px;
@@ -66,7 +66,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     right: -11px;
     height: 17px;
     border-radius: 100%;
-    background-color: white;
+    background-color: rgba(212, 213, 216, 0.692);
     padding: 3px;
     display: flex;
     align-items: center;
