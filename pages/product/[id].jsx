@@ -59,9 +59,11 @@ const Product = ({ book }) => {
           <button className={styles.button} onClick={handleClick}>
             Add to Cart
           </button>
+          <div className={styles.card}>
+            <h2>Book recommendation based on choice</h2>
+          </div>
         </div>
       </div>
-      <div className={styles.recomm}></div>
     </div>
   );
 };

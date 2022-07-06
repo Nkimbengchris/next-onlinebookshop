@@ -40,6 +40,16 @@ const Index = ({ orders, products }) => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.cont}>
+        <h1 className={styles.ti}>ADMIN DASHBOARD</h1>
+        <br />
+      </div>
+      <div className={styles.con}>
+        <h1 className={styles.title}>
+          <button className={styles.button1}>+ ADD BOOK</button>
+        </h1>
+      </div>
+
       <div className={styles.item}>
         <h1 className={styles.title}>Products</h1>
         <table className={styles.trTitle}>
