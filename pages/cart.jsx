@@ -105,6 +105,7 @@ const Cart = () => {
               <th>Price</th>
               <th>Quantity</th>
               <th>Total</th>
+              <th>Action</th>
             </tr>
           </tbody>
           <tbody>
@@ -133,6 +134,16 @@ const Cart = () => {
                   <span className={styles.total}>
                     XAF{product.price * product.quantity}
                   </span>
+                </td>
+                <td>
+                  <button onClick={() => removeItemHandler(product)}>
+                    <Image
+                      src="/img/cancel.png"
+                      alt=""
+                      width="25px"
+                      height="25px"
+                    />
+                  </button>
                 </td>
               </tr>
             ))}

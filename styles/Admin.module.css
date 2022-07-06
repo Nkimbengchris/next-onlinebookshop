@@ -2,6 +2,15 @@
     padding:50px;
     display: flex;
 }
+.con{
+    height: 15%;
+  width: 10%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
 .item{
     flex:1;
 }
@@ -22,4 +31,21 @@
 }
 .button:last-child{
     background-color: crimson;
+}
+.button1{
+    height: 60px;
+    margin-left: 10px;
+    background-color: #d1411e;
+    color: white;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ti{
+    color: #d1411e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-style: italic;
 }
